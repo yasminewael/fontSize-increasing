@@ -1,0 +1,24 @@
+<html>
+
+<head>
+<style>
+</style>
+</head>
+
+<body>
+  <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, est qui quidem reprehenderit dolore at alias possimus esse corrupti obcaecati! Inventore laudantium beatae, asperiores ratione odio eius dignissimos incidunt soluta?</p>
+  <script>
+
+
+const text = document.querySelector('.text');
+let startSize = 16;
+
+const increasing  = setInterval(() => {
+  text.style.fontSize = `${startSize}px`;
+  startSize === 100 ? clearInterval(increasing) : startSize++;
+}, 1000);
+
+  </script>
+</body>
+
+</html>
